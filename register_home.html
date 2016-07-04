@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>
+            Green Ratings
+        </title>
+        
+         <style type="text/css">
+              @font-face {
+               font-family: 'Roboto';
+               font-style: normal;
+               font-weight: 400;
+               src: local('Roboto Regular'), 
+                    local('Roboto-Regular'), 
+                    url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+                    format('woff');
+             }
+             
+             body{
+                 background-color: #fafafa;
+             }
+             
+             input{
+                 font-family: Roboto;
+             }
+             
+             .main_card{
+                 width: 500px;
+                 height: 523px;
+                 background-color: #fff;
+                 border: 1px solid #efefef;
+                 border-radius: 1px;
+                 margin: 0 0 10px;
+                 padding: 10px 0;
+                 margin-top: 11%;
+                 transition-duration: 0.4s;
+             }
+             
+             .main_card:hover{
+                  border: 1px solid rgba(0,153,51,0.4);
+                 border-bottom-right-radius: 25px;
+                 border-top-left-radius: 25px;
+             }
+             
+             #sprite_header{
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: -1px -2px;
+                 height: 43px;
+                 width: 600px;
+                 margin: 20px auto 10px;
+                 display: block;
+                 background-size: 115%;
+                 margin-left: 147px;
+             }
+             
+             #caption{
+                 font-family: Roboto;
+                 font-size: 17px;
+                 line-height: 20px;
+                 margin: 0 40px 10px;
+                 text-align: center;
+                 margin-top: 15px;
+                 color: #999;
+             }
+             
+             .drtz{
+                 background: 0 0;
+                 border: 1px solid #dbdbdb;
+                 border-radius: 3px;
+                 box-sizing: border-box;
+                 color: #262626;
+                 font-size: 14px;
+                 padding: 9px 8px 7px;
+                 -webkit-appearance: none;
+                 margin-top: 10px;
+                 width: 50%;
+             }
+             
+             .drtz
+             
+             .btn{
+                 
+             }
+             
+        </style>
+    </head>
+    
+    <body>
+        <center><div class="main_card">
+            <div id="sprite_header"></div><br>
+            <div class="reg_field">
+                <form class="reg_form_card">
+                    <div id="caption">Sign up to see ratings of your favorite professors.</div>
+                    <div>
+                        <input type="text" class="email drtz" aria-required="true" placeholder="Email">
+                    </div>
+                    <div>
+                        <input type="text" class="name drtz" aria-required="true" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <input type="text" class="username drtz" aria-required="true" placeholder="Username">
+                    </div>
+                    <div>
+                        <input type="password" class="password drtz" aria-required="true" placeholder="Password">
+                    </div>
+                    <div>
+                        <button class="new_account btn">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div></center>
+        
+    </body>
+</html>
