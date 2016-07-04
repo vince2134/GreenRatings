@@ -34,8 +34,8 @@
              }
              
              .main{
-                 height: 500px;
-                 margin-top: 9%;
+                 height: 270;
+                 margin-top: 13%;
              }
              
              .card:hover{
@@ -137,7 +137,7 @@
                  color: #999;
              }
              
-             .login{
+             .signup{
                  color: #262626;
              }
         </style>
@@ -146,15 +146,8 @@
     <body>
         <center><div class="main card">
             <div id="sprite_header"></div><br>
-            <div class="reg_field">
+            <div class="login_field">
                 <form class="reg_form_card">
-                    <div id="caption">Sign up to see ratings of your favorite professors.</div>
-                    <div>
-                        <input type="text" class="email drtz" aria-required="true" placeholder="Email">
-                    </div>
-                    <div>
-                        <input type="text" class="name drtz" aria-required="true" placeholder="Full Name">
-                    </div>
                     <div>
                         <input type="text" class="username drtz" aria-required="true" placeholder="Username">
                     </div>
@@ -162,17 +155,14 @@
                         <input type="password" class="password drtz" aria-required="true" placeholder="Password">
                     </div>
                     <div>
-                        <button class="new_account btn" style="vertical-align:middle"><span>Sign up </span></button>
-                    </div>
-                    <div>
-                        <p class="footer">By signing up, you agree to our Terms & Privacy Policy.</p>
+                        <button class="login btn" style="vertical-align:middle"><span>Log in </span></button>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="login card">
+        <div class="signup card">
             <div>
-                <p class="footer login">Have an account? <a href="login_home.html" class="footer">Log in</a></p>
+                <p class="footer signup">Don't have an account? <a href="register_home.html" class="footer">Sign up</a></p>
             </div>
         </div>
         </center>
