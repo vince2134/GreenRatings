@@ -14,7 +14,7 @@
              }
              
              .menu_top{
-                 height: 60px;
+                 height: 75px;
                  background-color: white;
                  position: fixed;
                  border-bottom: 1px solid #dbdbdb;
@@ -22,7 +22,6 @@
                  left:0px;
                  top:0px;
                  padding: 0;
-                 margin: 0;
              }
              
              @font-face {
@@ -46,7 +45,7 @@
              }
              
              #menu_search{
-                 margin-left: 47%;
+                 margin-left: 45%;
                  margin-top: 17px;
                  height: 40px;
              }
@@ -64,6 +63,35 @@
                  height: 120px;
                  width: 609px;
                  background-size: 90%;
+                 margin-left: 100px;
+                 margin-top: 7px;
+             }
+             
+             .text_search{
+                 font-family: Roboto;
+                 border: solid 1px #dbdbdb;
+                 border-radius: 3px;
+                 color: #262626;
+                 font-size: 14px;
+                 outline: none;
+                 z-index: 2;
+                 box-sizing: border-box;
+                 padding-left: 5px;
+                 height: 75%;
+                 width: 25%;
+                 transition-duration: 0.4s;
+                 background-color: #fafafa;
+                 text-align: center;
+                 margin-top: 5px;
+             }
+             
+             .text_search:focus{
+                 text-align: left;
+                 background-color: white;
+             }
+             
+             .text_search:hover{
+                 background-color: white;
              }
         </style>
     </head>
@@ -74,7 +102,7 @@
                 <div id="sprite_header"></div>
             </div>
             <div id="menu_search">
-                <input type="search" placeholder="Search">
+                <input type="text" class="text_search" placeholder="Search">
             </div>
         </div>
         
