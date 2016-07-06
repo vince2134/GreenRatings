@@ -62,7 +62,7 @@
                  background-position: -1px -2px;
                  height: 120px;
                  width: 609px;
-                 background-size: 90%;
+                 background-size: 80%;
                  margin-left: 100px;
                  margin-top: 7px;
              }
@@ -77,7 +77,7 @@
                  z-index: 2;
                  box-sizing: border-box;
                  padding-left: 5px;
-                 height: 75%;
+                 height: 65%;
                  width: 25%;
                  transition-duration: 0.4s;
                  background-color: #fafafa;
@@ -93,6 +93,66 @@
              .text_search:hover{
                  background-color: white;
              }
+             
+             .main_section{
+                 padding-top: 60px;
+                -webkit-box-flex: 1;
+                -webkit-flex-grow: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                margin: 0 auto;
+                max-width: 600px;
+                width: 100%;
+                 margin-top: 60px;
+             }
+             
+             .cards{
+                 margin-bottom: 30px;
+             }
+             
+             .card{
+                 margin-bottom: 60px;
+                     background-color: #fff;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    margin-left: -1px;
+    margin-right: -1px;
+                 width:500px;
+                 margin-left: auto;
+                 margin-right: auto;
+                 
+             }
+             
+             .card_header{
+                     height: 20px;
+                 color:#262626;
+    padding: 14px 20px;
+                 font-family: Roboto;
+                 font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 40px;
+    margin-left: -5px;
+                 width:500px;
+                 text-align: left;
+             }
+             
+             .review_by{
+                     border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+                  height: 20px;
+                 color:#262626;
+    padding: 14px 20px;
+                 font-family: Roboto;
+                 font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 40px;
+    margin-left: -5px;
+                 text-align: left;
+             }
         </style>
     </head>
     
@@ -105,6 +165,13 @@
                 <input type="text" class="text_search" placeholder="Search">
             </div>
         </div>
-        
+        <section class="main_section">
+            <div class="cards">
+                <article class="card">
+                    <header class="card_header">dr. remedios bulos</header>
+                    <div class="review_by">review by: vincegonzales</div>
+                </article>
+            </div>
+        </section>
     </body>
 </html>
