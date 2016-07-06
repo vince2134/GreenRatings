@@ -7,6 +7,7 @@
          <style type="text/css">
              div{
                  display:block;
+                 position: relative;
              }
              
              body{
@@ -16,7 +17,7 @@
              .menu_top{
                  height: 75px;
                  background-color: white;
-                 position: fixed;
+                 position: absolute;
                  border-bottom: 1px solid #dbdbdb;
                  width:100%;
                  left:0px;
@@ -25,27 +26,27 @@
              }
              
              @font-face {
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 400;
-              src: local('Roboto Regular'), 
-                   local('Roboto-Regular'), 
-                   url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
-                   format('woff');
-            }
+                 font-family: 'Roboto';
+                 font-style: normal;
+                 font-weight: 400;
+                 src: local('Roboto Regular'), 
+                      local('Roboto-Regular'), 
+                      url(http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) 
+                 format('woff');
+             }
              
              #menu_title{
                  font-family: Roboto;
                  font-size: 22px;
                  font-stretch: expanded;
                  left:100px;
-                 position: fixed;
+                 position: absolute;
                  top:14px;
                  
              }
              
              #menu_search{
-                 margin-left: 45%;
+                 margin-left: 43%;
                  margin-top: 17px;
                  height: 40px;
              }
@@ -60,11 +61,11 @@
                  background-image: url(sprite.png);
                  background-repeat: no-repeat;
                  background-position: -1px -2px;
-                 height: 120px;
-                 width: 609px;
-                 background-size: 80%;
-                 margin-left: 100px;
-                 margin-top: 7px;
+                 height: 25px;
+                 width: 650px;
+                 background-size: 22%;
+                 margin-left: 410px;
+                 margin-top: 11px;
              }
              
              .text_search{
@@ -72,7 +73,7 @@
                  border: solid 1px #dbdbdb;
                  border-radius: 3px;
                  color: #262626;
-                 font-size: 14px;
+                 font-size: 12px;
                  outline: none;
                  z-index: 2;
                  box-sizing: border-box;
@@ -82,7 +83,7 @@
                  transition-duration: 0.4s;
                  background-color: #fafafa;
                  text-align: center;
-                 margin-top: 5px;
+                 margin-top: 7px;
              }
              
              .text_search:focus{
@@ -96,63 +97,181 @@
              
              .main_section{
                  padding-top: 60px;
-                -webkit-box-flex: 1;
-                -webkit-flex-grow: 1;
-                -ms-flex-positive: 1;
-                flex-grow: 1;
-                margin: 0 auto;
-                max-width: 600px;
-                width: 100%;
+                 margin: 0 auto;
+                 max-width: 600px;
+                 width: 100%;
                  margin-top: 60px;
              }
              
-             .cards{
+             .container{
                  margin-bottom: 30px;
              }
              
              .card{
-                 margin-bottom: 60px;
-                     background-color: #fff;
-    border: 1px solid #efefef;
-    border-radius: 3px;
-    margin-left: -1px;
-    margin-right: -1px;
-                 width:500px;
+                 background-color: #fff;
+                 border: 1px solid #efefef;
+                 border-radius: 3px;
+                 width:600px;
                  margin-left: auto;
                  margin-right: auto;
-                 
+                 margin-bottom: 50px;
              }
              
              .card_header{
-                     height: 20px;
+                 height: 20px;
                  color:#262626;
-    padding: 14px 20px;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 padding-left: 40px;
                  font-family: Roboto;
-                 font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-left: 40px;
-    margin-left: -5px;
-                 width:500px;
+                 font-size: 14px;
+                 width:600px;
                  text-align: left;
+                 font-weight: 600;
+                 font-stretch: expanded;
              }
              
-             .review_by{
-                     border-bottom: 1px solid #efefef;
-    border-top: 1px solid #efefef;
-                  height: 20px;
+             .review_format{
+                 display: block;
+                 width: 100%;
                  color:#262626;
-    padding: 14px 20px;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
                  font-family: Roboto;
-                 font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-left: 40px;
-    margin-left: -5px;
+                 font-size: 14px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 padding-left: 40px;
+                 width: 560px;
                  text-align: left;
+                 border-top: 1px solid #efefef;
              }
+             
+             .main_review{
+                 display: block;
+                 width: 100%;
+                 color:#262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 font-family: Roboto;
+                 font-size: 14px;
+                 padding-left: 40px;
+                 padding-right: 40px;
+                 width: 521px;
+                 text-align: left;
+                 border-top: 1px solid #efefef;
+             }
+             
+             article{
+                 transition-duration: 0.4s;
+             }
+             
+             article:hover{
+                 border: 1px solid rgba(0,153,51,0.4);
+                 border-bottom-right-radius: 25px;
+                 border-top-left-radius: 30px;
+             }
+             
+             .username{
+                 font-weight: 600;
+             }
+             
+             .btn{
+                 font-family:Roboto;
+                 display: inline-block;
+                 border-radius: 4px;
+                 background-color: #4CAF50;
+                 border: none;
+                 color: #FFFFFF;
+                 text-align: center;
+                 font-size: 14px;
+                 padding: 9px;
+                 transition: all 0.5s;
+                 cursor: pointer;
+                 position: absolute;
+                 margin-left: 1277px;
+                 margin-top: -40px;
+             }
+             
+             .btn:hover{
+                 background-color: #6FBF72;
+             }
+             
+             a{
+                 text-decoration: none;
+                 color: white;
+                 font-family: Roboto;
+             }
+             
+             .dislike{
+                font-weight: 600;
+                 padding-left: 20px;
+             }
+             
+             .like{
+                font-weight: 600;
+             }
+             
+             .comments{
+                 margin: 0px;
+                 height: 0px;
+             }
+             
+             .add_comment{
+                 font-family: Roboto;
+                 font-size: 15px;
+                 padding-top: 14px;
+                 padding-bottom: 16px;
+                 padding-left: 12px;
+                 height: 50px;
+                 border-top: 1px solid #efefef;
+                 border-bottom: none;
+                 border-left: none;
+                 border-right: none;
+                 background: 0 0;
+                color: #262626;
+                    outline: none;
+                 display: block;
+                    width: 489px;
+    margin-left: 111px;
+    margin-right: 40px;
+             }
+             
+             .pos_reaction{
+                background-image: url(sprite.png);
+                background-repeat: no-repeat;
+                    background-position: 24px -33px;
+    height: 50px;
+    width: 47px;
+    background-size: 418%;
+                 display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+                position: absolute;
+                 margin-top: 6px;
+                 margin-left: 16px;
+             }
+             
+             .neg_reaction{
+                background-image: url(sprite.png);
+                background-repeat: no-repeat;
+                   background-position: -25px -39px;
+    height: 50px;
+    width: 47px;
+    background-size: 418%;
+                 display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+                position: absolute;
+                 margin-top: 6px;
+                 margin-left: 66px;
+
+             }
+             
+             
         </style>
     </head>
     
@@ -164,12 +283,64 @@
             <div id="menu_search">
                 <input type="text" class="text_search" placeholder="Search">
             </div>
+            <div>
+                <button class="btn" style="vertical-align:middle"><a href="login_home.html">Logout</a></button>
+            </div>
         </div>
         <section class="main_section">
-            <div class="cards">
+            <div class="container">
                 <article class="card">
-                    <header class="card_header">dr. remedios bulos</header>
-                    <div class="review_by">review by: vincegonzales</div>
+                    <header class="card_header">Dr. Remedios Bulos</header>
+                    <div class="review_format">by: <span class="username">vincegonzales</span></dic></div>
+                    <div class="review_format">Overall Rating: <span>★ 5.0</span><br>Overall Difficulty: <span>★ 5.0</span></dic></div>
+                    <div class="main_review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="review_format"><span class="like">1k</span> likes <span class="dislike">2k</span> dislikes</dic></div>
+                    <div>
+                        <ul class="comments"></ul>
+                    </div>
+                    <div>
+                        <span class="pos_reaction"></span>
+                        <span class="neg_reaction"></span>
+                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                    </div>
+                </article>
+    
+                <article class="card">
+                    <header class="card_header">Ms. Courtney Ngo</header>
+                    <div class="review_format">by: <span class="username">micohalvarez</span></dic></div>
+                    <div class="review_format">Overall Rating: <span>★ 5.0</span><br>Overall Difficulty: <span>★ 5.0</span></dic></div>
+                    <div class="main_review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="review_format"><span class="like">1k</span> likes <span class="dislike">2k</span> dislikes</dic></div>
+                    <div>
+                        <ul class="comments"></ul>
+                    </div>
+                    <div>
+                        <span class="pos_reaction"></span>
+                        <span class="neg_reaction"></span>
+                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                    </div>
+                </article>
+
+                <article class="card">
+                    <header class="card_header">Mrs. Ethel Ong</header>
+                    <div class="review_format">by: <span class="username">dhirendhanani</span></dic></div>
+                    <div class="review_format">Overall Rating: <span>★ 5.0</span><br>Overall Difficulty: <span>★ 5.0</span></dic></div>
+                    <div class="main_review">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="review_format"><span class="like">1k</span> likes <span class="dislike">2k</span> dislikes</dic></div>
+                    <div>
+                        <ul class="comments"></ul>
+                    </div>
+                    <div>
+                        <span class="pos_reaction"></span>
+                        <span class="neg_reaction"></span>
+                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                    </div>
                 </article>
             </div>
         </section>
