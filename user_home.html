@@ -4,6 +4,11 @@
             Green Ratings
         </title>
         
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.color.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        
          <style type="text/css">
              div{
                  display:block;
@@ -205,7 +210,7 @@
              }
              
              .dislike{
-                font-weight: 600;
+                 font-weight: 600;
                  padding-left: 20px;
              }
              
@@ -230,48 +235,124 @@
                  border-left: none;
                  border-right: none;
                  background: 0 0;
-                color: #262626;
-                    outline: none;
+                 color: #262626;
+                 outline: none;
                  display: block;
-                    width: 489px;
-    margin-left: 111px;
-    margin-right: 40px;
+                 width: 489px;
+                 margin-left: 111px;
+                 margin-right: 40px;
              }
              
              .pos_reaction{
-                background-image: url(sprite.png);
-                background-repeat: no-repeat;
-                    background-position: 24px -33px;
-    height: 50px;
-    width: 47px;
-    background-size: 418%;
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: 24px -33px;
+                 height: 50px;
+                 width: 47px;
+                 background-size: 418%;
                  display: block;
-    overflow: hidden;
-    text-indent: 110%;
-    white-space: nowrap;
-                position: absolute;
+                 overflow: hidden;
+                 text-indent: 110%;
+                 white-space: nowrap;
+                 position: absolute;
                  margin-top: 6px;
                  margin-left: 16px;
              }
              
              .neg_reaction{
-                background-image: url(sprite.png);
-                background-repeat: no-repeat;
-                   background-position: -25px -39px;
-    height: 50px;
-    width: 47px;
-    background-size: 418%;
+                 background-image: url(sprite.png);
+                 background-repeat: no-repeat;
+                 background-position: -25px -39px;
+                 height: 50px;
+                 width: 47px;
+                 background-size: 418%;
                  display: block;
-    overflow: hidden;
-    text-indent: 110%;
-    white-space: nowrap;
-                position: absolute;
+                 overflow: hidden;
+                 text-indent: 110%;
+                 white-space: nowrap;
+                 position: absolute;
                  margin-top: 6px;
                  margin-left: 66px;
 
              }
              
+             .add{
+                 font-family: Roboto;
+                 font-size: 15px;
+                 padding-top: 14px;
+                 padding-bottom: 16px;
+                 padding-left: 12px;
+                 height: 50px;
+                 border-top: none;
+                 border-bottom: none;
+                 border-left: none;
+                 border-right: none;
+                 background: 0 0;
+                 color: #262626;
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 outline: none;
+                 width: 100%;
+                 padding-left: 40px;
+                 padding-right: 40px;
+             }
              
+             .review{
+                 border-top: 1px solid #efefef;
+                                  height: auto;
+             }
+             
+             .post{
+                 font-family:Roboto;
+                 display: inline-block;
+                 border-radius: 4px;
+                 background-color: #4CAF50;
+                 border: none;
+                 color: #FFFFFF;
+                 text-align: center;
+                 font-size: 14px;
+                 padding: 9px;
+                 transition: all 0.5s;
+                 cursor: pointer;
+                 
+                 margin-left: 480px;
+                 margin-right: 40px;
+                 margin-top: 14px;
+                 margin-bottom: 14px;
+                 width: 70px;
+             }
+             
+             .post:hover{
+                 background-color: #6FBF72;
+             }
+             
+             .post_con{
+                 border-top: 1px solid #efefef;
+             }
+             
+             .prof{
+                 border-bottom: 1px solid #efefef;
+             }
+             
+             .ratings{
+                 font-family: Roboto;
+                 height: 50px;
+                 font-size: 14px;
+                 margin-left: 40px;
+                 margin-right: 40px;
+                 margin-top: 14px;
+                 margin-bottom: 14px;
+                 display: inline-block;
+             }
+             
+             textarea{
+                 font-family: Roboto;
+                 font-size: 14px;
+                 width: 86%;
+                 outline: none;
+                 resize: none;
+                 border: none;
+             }
         </style>
     </head>
     
@@ -289,6 +370,37 @@
         </div>
         <section class="main_section">
             <div class="container">
+                <article class="card">
+                    <div>
+                        <input type="text" class="add prof" placeholder="Who's the professor?">
+                    </div>
+                    <center><div class="ratings">
+                        Overall Rating: <ul id="overall_rating">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="ratings">
+                        Overall Difficulty: <ul id="overall_difficulty">
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div></center>
+                    <div>
+                        <textarea name="Text1" cols="40" rows="2" class="add review" placeholder="Add a review..."></textarea>
+                    </div>
+                    <div class="post_con">
+                        <button class="post">Post</button>
+                        
+                    </div>
+                </article>
+                
                 <article class="card">
                     <header class="card_header">Dr. Remedios Bulos</header>
                     <div class="review_format">by: <span class="username">vincegonzales</span></dic></div>
