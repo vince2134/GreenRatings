@@ -59,6 +59,38 @@ $(document).ready(function()
 			}
 		});
 	};
+    
+    var colourizeGrading = function(nrOfRatings) {
+		$("#grading li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+    
+    var colourizeApproachability = function(nrOfRatings) {
+		$("#approachability li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+    
+    var colourizeLectures = function(nrOfRatings) {
+		$("#lectures li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+    
+    var colourizeExams = function(nrOfRatings) {
+		$("#exams li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
 	
 	// Handle the hover events
 	$("#overall_rating li a").hover(function() {
@@ -105,7 +137,12 @@ $(document).ready(function()
 		$("#overall_difficulty li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
 	});
     
+<<<<<<< HEAD
         $("#grading li a").hover(function() {
+=======
+    // Handle the hover events
+	$("#grading li a").hover(function() {
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 		
 		// Empty the rating info box and fade in
 		ratingInfobox
@@ -124,10 +161,18 @@ $(document).ready(function()
 			.animate({ opacity : 0 }, animationTime);
 		
 		// Restore all the rating to their original colours
+<<<<<<< HEAD
 		$("#grading a").stop().animate({ backgroundColor : "#fff" } , animationTime);
 	});
     // Handle the hover events
 	$("#exams li a").hover(function() {
+=======
+		$("#grading li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    
+    // Handle the hover events
+	$("#approachability li a").hover(function() {
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 		
 		// Empty the rating info box and fade in
 		ratingInfobox
@@ -137,7 +182,11 @@ $(document).ready(function()
 		
 		
 		// Call the colourize function with the given index
+<<<<<<< HEAD
 		colourizeExam($(this).parent().index());
+=======
+		colourizeApproachability($(this).parent().index());
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 	}, function() {
 		
 		// Fade out the rating information box
@@ -146,8 +195,14 @@ $(document).ready(function()
 			.animate({ opacity : 0 }, animationTime);
 		
 		// Restore all the rating to their original colours
+<<<<<<< HEAD
 		$("#exams li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
 	});
+=======
+		$("#approachability li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
     // Handle the hover events
 	$("#lectures li a").hover(function() {
 		
@@ -159,7 +214,11 @@ $(document).ready(function()
 		
 		
 		// Call the colourize function with the given index
+<<<<<<< HEAD
 		colourizeLecture($(this).parent().index());
+=======
+		colourizeLectures($(this).parent().index());
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 	}, function() {
 		
 		// Fade out the rating information box
@@ -170,8 +229,14 @@ $(document).ready(function()
 		// Restore all the rating to their original colours
 		$("#lectures li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
 	});
+<<<<<<< HEAD
     // Handle the hover events
 	$("#approachability li a").hover(function() {
+=======
+    
+    // Handle the hover events
+	$("#exams li a").hover(function() {
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 		
 		// Empty the rating info box and fade in
 		ratingInfobox
@@ -181,7 +246,11 @@ $(document).ready(function()
 		
 		
 		// Call the colourize function with the given index
+<<<<<<< HEAD
 		colourizeApproach($(this).parent().index());
+=======
+		colourizeExams($(this).parent().index());
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 	}, function() {
 		
 		// Fade out the rating information box
@@ -190,7 +259,11 @@ $(document).ready(function()
 			.animate({ opacity : 0 }, animationTime);
 		
 		// Restore all the rating to their original colours
+<<<<<<< HEAD
 		$("#approachability li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+=======
+		$("#exams li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+>>>>>>> a9c8fd1e99558b6b8a9c8e2e670f3059cefd3fb6
 	});
 	
 	// Prevent the click event and show the rating
@@ -199,6 +272,22 @@ $(document).ready(function()
 		alert("You voted on item number " + ($(this).parent().index() + 1));
 	});
     $("#overall_difficulty li a").click(function(e) {
+		e.preventDefault();
+		alert("You voted on item number " + ($(this).parent().index() + 1));
+	});
+    $("#lectures li a").click(function(e) {
+		e.preventDefault();
+		alert("You voted on item number " + ($(this).parent().index() + 1));
+	});
+    $("#approachability li a").click(function(e) {
+		e.preventDefault();
+		alert("You voted on item number " + ($(this).parent().index() + 1));
+	});
+    $("#grading li a").click(function(e) {
+		e.preventDefault();
+		alert("You voted on item number " + ($(this).parent().index() + 1));
+	});
+    $("#Exams li a").click(function(e) {
 		e.preventDefault();
 		alert("You voted on item number " + ($(this).parent().index() + 1));
 	});

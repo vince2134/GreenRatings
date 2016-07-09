@@ -31,15 +31,9 @@ h2 a:hover { color: #90bcd0; }
 .info a { color:#eee; }
 
 /* RATING */
-#overall_rating { list-style:none; }
-#overall_rating li { float:left; }
-#overall_rating li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
-	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
-
-/* RATING */
-#overall_difficulty { list-style:none; }
-#overall_difficulty li { float:left; }
-#overall_difficulty li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
+.rates { list-style:none; }
+.rates li { float:left; }
+.rates li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
 	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
 
 #ratinginfo { clear:left; width:350px; margin:120px auto; }
