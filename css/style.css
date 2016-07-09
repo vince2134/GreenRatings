@@ -45,3 +45,25 @@ h2 a:hover { color: #90bcd0; }
 #ratinginfo { clear:left; width:350px; margin:120px auto; }
 #ratinginfo p { text-align:center; background-image:url("../images/textbg.png"); font:20px Georgia,'Times New Roman',serif; padding:10px;
 	-moz-box-shadow:0 0 5px #888; -moz-border-radius:40px; -webkit-box-shadow:0 0 5px #888; -webkit-border-radius:40px; -o-box-shadow:0 0 5px #888; -o-border-radius:40px; }
+/* RATING */
+#approachability { list-style:none; }
+#approachability li { float:left; }
+#approachability li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
+	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
+#lectures { list-style:none; }
+#lectures li { float:left; }
+#lectures li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
+	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
+#exams { list-style:none; }
+#exams li { float:left; }
+#exams li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
+	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
+#grading { list-style:none; }
+#grading li { float:left; }
+#grading li a { display:block; width:20px; height:20px; margin:5px; border:1px solid #888; background-color:#fff; text-indent:-9999px;
+	 -moz-border-radius:40px;  -webkit-border-radius:40px;  -o-border-radius:40px; }
+
+#criteria { float:right;
+            position: relative;
+            right: 200px;
+            text-align:left;}

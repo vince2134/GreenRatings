@@ -9,7 +9,7 @@ $(document).ready(function()
 	
 	// Variable to store the colours
 	var colours = ["bd2c33", "e49420", "ecdb00", "3bad54", "1b7db9"];
-
+    var coloursD = ["1b7db9", "3bad54", "ecdb00", "e49420", "bd2c33"];
 	// Add rating information box after rating
 	var ratingInfobox = $("<div />")
 		.attr("id", "ratinginfo")
@@ -26,6 +26,34 @@ $(document).ready(function()
     
     var colourizeOverallDifficulty = function(nrOfRatings) {
 		$("#overall_difficulty li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + coloursD[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+    var colourizeGrading = function(nrOfRatings) {
+		$("#grading li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+     var colourizeApproach= function(nrOfRatings) {
+		$("#approachability li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+     var colourizeLecture = function(nrOfRatings) {
+		$("#lectures li a").each(function() {
+			if($(this).parent().index() <= nrOfRatings) {
+				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
+			}
+		});
+	};
+     var colourizeExam = function(nrOfRatings) {
+		$("#exams li a").each(function() {
 			if($(this).parent().index() <= nrOfRatings) {
 				$(this).stop().animate({ backgroundColor : "#" + colours[nrOfRatings] } , animationTime);
 			}
@@ -75,6 +103,94 @@ $(document).ready(function()
 		
 		// Restore all the rating to their original colours
 		$("#overall_difficulty li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    
+        $("#grading li a").hover(function() {
+		
+		// Empty the rating info box and fade in
+		ratingInfobox
+			.empty()
+			.stop()
+			.animate({ opacity : 1 }, animationTime);
+		
+		
+		// Call the colourize function with the given index
+		colourizeGrading($(this).parent().index());
+	}, function() {
+		
+		// Fade out the rating information box
+		ratingInfobox
+			.stop()
+			.animate({ opacity : 0 }, animationTime);
+		
+		// Restore all the rating to their original colours
+		$("#grading a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    // Handle the hover events
+	$("#exams li a").hover(function() {
+		
+		// Empty the rating info box and fade in
+		ratingInfobox
+			.empty()
+			.stop()
+			.animate({ opacity : 1 }, animationTime);
+		
+		
+		// Call the colourize function with the given index
+		colourizeExam($(this).parent().index());
+	}, function() {
+		
+		// Fade out the rating information box
+		ratingInfobox
+			.stop()
+			.animate({ opacity : 0 }, animationTime);
+		
+		// Restore all the rating to their original colours
+		$("#exams li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    // Handle the hover events
+	$("#lectures li a").hover(function() {
+		
+		// Empty the rating info box and fade in
+		ratingInfobox
+			.empty()
+			.stop()
+			.animate({ opacity : 1 }, animationTime);
+		
+		
+		// Call the colourize function with the given index
+		colourizeLecture($(this).parent().index());
+	}, function() {
+		
+		// Fade out the rating information box
+		ratingInfobox
+			.stop()
+			.animate({ opacity : 0 }, animationTime);
+		
+		// Restore all the rating to their original colours
+		$("#lectures li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
+	});
+    // Handle the hover events
+	$("#approachability li a").hover(function() {
+		
+		// Empty the rating info box and fade in
+		ratingInfobox
+			.empty()
+			.stop()
+			.animate({ opacity : 1 }, animationTime);
+		
+		
+		// Call the colourize function with the given index
+		colourizeApproach($(this).parent().index());
+	}, function() {
+		
+		// Fade out the rating information box
+		ratingInfobox
+			.stop()
+			.animate({ opacity : 0 }, animationTime);
+		
+		// Restore all the rating to their original colours
+		$("#approachability li a").stop().animate({ backgroundColor : "#fff" } , animationTime);
 	});
 	
 	// Prevent the click event and show the rating
