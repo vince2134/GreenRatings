@@ -71,7 +71,28 @@ h2 a:hover { color: #90bcd0; }
    .toprated_format{
                  display: block;
                  width: 100%;
-                 color:#262626;
+     
+                 padding-top: 14px;
+                 padding-bottom: 14px;
+                 font-family: Roboto;
+                 font-size: 14px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 padding-left: 40px;
+                 width: 300px;
+                 text-align: left;
+                 border-top: 1px solid #efefef;
+                color:#4CAF50;
+                    font-weight:bold;
+       transition-duration: 0.4s;
+             }
+
+.toprated_format:hover{
+                 display: block;
+                 width: 100%;
+                background-color: #eaeaea;
+                color: white;
                  padding-top: 14px;
                  padding-bottom: 14px;
                  font-family: Roboto;
