@@ -95,6 +95,28 @@ h2 a:hover { color: #90bcd0; }
                  color: #FFFFFF;
                  text-align: center;
                  font-size: 14px;
+<<<<<<< HEAD
+=======
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                 padding-left: 40px;
+                 width: 300px;
+                 text-align: left;
+                 border-top: 1px solid #efefef;
+                color:#4CAF50;
+                    font-weight:bold;
+             }
+  .userH{
+                 font-family:Roboto;
+                 display: inline-block;
+                 border-radius: 4px;
+                 background-color: #4CAF50;
+                 border: none;
+                 color: #FFFFFF;
+                 text-align: center;
+                 font-size: 14px;
+>>>>>>> 8bea73b056f5cbe765b24ba10f3c514a8950adcf
                  padding: 9px;
                  transition: all 0.5s;
                  cursor: pointer;
