@@ -101,7 +101,7 @@
              }
              
              .main_section{
-                 padding-top: 60px;
+                 padding-top: 120px;
                  margin: 0 auto;
                  max-width: 600px;
                  width: 100%;
@@ -355,6 +355,59 @@
                  resize: none;
                  border: none;
              }
+             
+             .dropbtn {
+    background-color: white;
+                 transition-duration: 0.4s;
+    color:black;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: Roboto;
+                 height: 50px;
+                 border-left: 1px solid #dbdbdb;
+                 border-right: 1px solid #dbdbdb;
+                 
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+}
         </style>
     </head>
     
@@ -369,6 +422,58 @@
             <div>
                 <button class="btn" style="vertical-align:middle"><a href="login_home.html">Logout</a></button>
             </div>
+        </div>
+        <div class="menu_top" style="margin-top: 76px; height: 50px;">
+           <center><div class="dropdown">
+              <button class="dropbtn">CS-CSE</button>
+              <div class="dropdown-content">
+                <a href="#">ASASA</a>
+                <a href="#">ASAS</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn">CS-NE</button>
+                <div class="dropdown-content">
+                <a href="#">ASASA</a>
+                <a href="#">ASAS</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">CS-ST</button>
+              <div class="dropdown-content">
+                <a href="#">OPERSYS</a>
+                <a href="#">WEBAPDE</a>
+                <a href="#">COMPRO1</a>
+              </div>
+            </div>
+               <div class="dropdown">
+              <button class="dropbtn">CS-IST</button>
+              <div class="dropdown-content">
+                <a href="#">BS Computer Science</a>
+                <a href="#">BS </a>
+                <a href="#">Link 3</a>
+            </div>
+                </div>
+               <div class="dropdown">
+              <button class="dropbtn">CS-ST</button>
+              <div class="dropdown-content">
+                <a href="#">BS Computer Science</a>
+                <a href="#">BS </a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+               <div class="dropdown">
+              <button class="dropbtn">Floating Courses</button>
+              <div class="dropdown-content">
+                <a href="#">BS Computer Science</a>
+                <a href="#">BS </a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+               </div>
+            </center>
         </div>
         <section class="main_section">
             <div class="container">
