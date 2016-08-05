@@ -9,6 +9,13 @@
         <script type="text/javascript" src="js/jquery.color.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         
+         <script type="text/javascript">
+            function Redirect() {
+               window.location="register_home.html";
+            }
+         </script>
+        
+        
          <style type="text/css">
              div{
                  display:block;
@@ -243,6 +250,7 @@
                  padding-top: 14px;
                  padding-bottom: 16px;
                  padding-left: 12px;
+                 padding-right: 12px;
                  height: 50px;
                  border-top: 1px solid #efefef;
                  border-bottom: none;
@@ -385,49 +393,47 @@
              
 
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-    
-    
-}
+             .dropdown {
+                position: relative;
+                display: inline-block;
+                z-index: 2;
+             }
 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    font-size: 14px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 2;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                font-size: 14px;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                  z-index: 2;
+                box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+            }
 
 
-.dropdown-content a {
-    z-index: 2;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-       z-index: 2;
-}
+            .dropdown-content a {
+                z-index: 2;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                   z-index: 2;
+            }
 
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+            .dropdown-content a:hover {background-color: #f1f1f1}
 
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
 
 
-.dropdown:hover .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-}
+            .dropdown:hover .dropbtn {
+                background-color: #4CAF50;
+                color: white;
+            }
         </style>
     </head>
     
@@ -525,11 +531,7 @@
                                 <li><a href="#"></a></li>
                                 <li><a href="#"></a></li>
                             </ul>
-
-
                         </div>
-
-
                         <div class="ratings">
                             Grading: <ul id="grading" class="rates">
                                 <li><a href="#"></a></li>
@@ -601,7 +603,7 @@
                     <div>
                         <span class="pos_reaction"></span>
                         <span class="neg_reaction"></span>
-                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                        <textarea name="Text1" cols="40" rows="2" class="add_comment" placeholder="Add a comment..."></textarea>
                     </div>
                 </article>
                 
@@ -622,7 +624,7 @@
                     <div>
                         <span class="pos_reaction"></span>
                         <span class="neg_reaction"></span>
-                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                        <textarea name="Text1" cols="40" rows="2" class="add_comment" placeholder="Add a comment..."></textarea>
                     </div>
                 </article>
                 
@@ -643,10 +645,14 @@
                     <div>
                         <span class="pos_reaction"></span>
                         <span class="neg_reaction"></span>
-                        <input type="text" class="add_comment" placeholder="Add a comment...">
+                        <textarea name="Text1" cols="40" rows="2" class="add_comment" placeholder="Add a comment..."></textarea>
                     </div>
                 </article>
             </div>
         </section>
     </body>
+<script src='../dist/autosize.js'></script>
+        <script>
+		  autosize(document.querySelectorAll('textarea'));
+	    </script>
 </html>
